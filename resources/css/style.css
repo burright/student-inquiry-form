@@ -1,0 +1,244 @@
+/* ------------------------------ */
+/* BASIC SETUP */
+/* ------------------------------ */
+
+html, body {
+    background-color: #fff;
+    color: #404041;
+    font-family: 'Merriweather', serif;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.4;
+    text-rendering: optimizeLegibility;
+}
+
+/* ------------------------------ */
+/* REUSABLE COMPONENTS */
+/* ------------------------------ */
+
+.group {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* ------------------------------ */
+/* HEADINGS */
+/* ------------------------------ */
+
+h2 {
+    margin-bottom: 20px;
+    word-spacing: 4px;
+    font-size: 200%;
+    letter-spacing: 1px;
+}
+
+/* ------------------------------ */
+/* HEADER */
+/* ------------------------------ */
+
+header {
+    padding-top: 20px;
+    background-color: #1c3d71;
+}
+
+.header-logo,
+.footer-logo {
+    background-color: #1c3d71;
+    padding-left: 8px;
+    width: 100%;
+}
+
+.header-logo {
+    max-width: 550px;
+}
+
+.footer-logo {
+    max-width: 695px;
+}
+
+.hero-text-box {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-nav {
+    list-style: none;
+    text-align: center;
+    margin: 0 0 5px 0;
+}
+
+.main-nav li {
+    display: inline-block;
+    font-size: 96%;
+    padding: 0 5px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: #4897d2;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #fff;
+    color: #55b7ff;
+}
+
+.active:link,
+.active:visited {
+    border-bottom: 8px solid #ffffff;
+    background-color: #ffffff;
+    color: #1c3d71;
+    padding: 1px 2px 4px 2px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.active:hover,
+.active:active {
+    color: #1c3d71;
+}
+
+/* ------------------------------ */
+/* STUDENT FORM */
+/* ------------------------------ */
+
+.section-form {
+    padding-top: 50px;
+}
+
+.inquiry-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+fieldset {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* ------------------------------ */
+/* FOOTER */
+/* ------------------------------ */
+
+footer {
+    background-color: #1c3d71;
+    font-size: 80%;
+}
+
+.footer-logo {
+    padding-top: 20px;
+}
+
+.footer-nav {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-nav li {
+    display: inline-block;
+    border-right: 2px solid #4897d2;
+}
+
+.footer-nav li:last-child {
+    border-right: none;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+    text-decoration: none;
+    color: #4897d2;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #55b7ff;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 90%;
+}
+
+/* ------------------------------ */
+/* MODAL */
+/* ------------------------------ */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-button {
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #4897d2;
+    border-color: #4897d2;
+    color: #ffffff;
+}
+
+.modal-header h2 {
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal-content .group .col_1_of_3 p {
+    font-size: 120%;
+}
+
+.modal-content .group .col_2_of_3 p {
+    padding-top: 2px;
+    margin-left: -10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
